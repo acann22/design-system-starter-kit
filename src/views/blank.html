@@ -15,9 +15,226 @@
   Page content (gets injected into the template)
 -->
 {% block content %}
-
-<h2 class="slds-text-align--center slds-text-heading--large slds-m-around--large">
-  Hello Amazing Dreamforce Attendees!
-</h2>
+<div class="slds-tabs--scoped">
+  <ul class="slds-tabs--scoped__nav" role="tablist">
+    <li class="slds-tabs--scoped__item slds-active" title="Item One" role="presentation"><a class="slds-tabs--scoped__link" href="javascript:void(0);" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-scoped-1" id="tab-scoped-1__item">Info
+		<span class="slds-icon_container" title="description of icon when needed">
+		  <svg class="slds-icon--x-small slds-icon-text-default" aria-hidden="true">
+		    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#info_alt"></use>
+		  </svg>
+		  <span class="slds-assistive-text">Warning Icon</span>
+		</span></a></li>
+    <li class="slds-tabs--scoped__item" title="Item Two" role="presentation"><a class="slds-tabs--scoped__link" href="javascript:void(0);" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-scoped-2" id="tab-scoped-2__item">Registration Types
+		<span class="slds-icon_container" title="description of icon when needed">
+		  <svg class="slds-icon--x-small slds-icon-text-default" aria-hidden="true">
+		    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#layers"></use>
+		  </svg>
+		  <span class="slds-assistive-text">Warning Icon</span>
+		</span></a></li>
+    <li class="slds-tabs--scoped__item" title="Item Three" role="presentation"><a class="slds-tabs--scoped__link" href="javascript:void(0);" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-scoped-3" id="tab-scoped-3__item">Sessions
+    	<span class="slds-icon_container" title="description of icon when needed">
+		  <svg class="slds-icon--x-small slds-icon-text-default" aria-hidden="true">
+		    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#builder"></use>
+		  </svg>
+		  <span class="slds-assistive-text">Warning Icon</span>
+		</span></a></li>
+    <li class="slds-tabs--scoped__item" title="Item Three" role="presentation"><a class="slds-tabs--scoped__link" href="javascript:void(0);" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-scoped-3" id="tab-scoped-4__item">Speakers
+    	<span class="slds-icon_container" title="description of icon when needed">
+		  <svg class="slds-icon--x-small slds-icon-text-default" aria-hidden="true">
+		    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#groups"></use>
+		  </svg>
+		  <span class="slds-assistive-text">Warning Icon</span>
+		</span></a></li>
+    <li class="slds-tabs--scoped__item" title="Item Three" role="presentation"><a class="slds-tabs--scoped__link" href="javascript:void(0);" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-scoped-3" id="tab-scoped-5__item">Venues
+    	<span class="slds-icon_container" title="description of icon when needed">
+		  <svg class="slds-icon--x-small slds-icon-text-default" aria-hidden="true">
+		    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#company"></use>
+		  </svg>
+		  <span class="slds-assistive-text">Warning Icon</span>
+		</span></a></li>
+  </ul>
+  <div id="tab-scoped-1" class="slds-tabs--scoped__content slds-show" role="tabpanel" aria-labelledby="tab-scoped-1__item">
+  	<div class="slds-grid slds-wrap slds-grid--pull-padded">
+  		<div class="slds-form--stacked">
+		  	<div class="slds-form-element">
+		  		<label class="slds-form-element__label" for="text-input-01"><abbr class="slds-required" title="required">*</abbr>Event Name</label>
+		  		<div class="slds-form-element__control">
+		    		<input type="text" id="text-input-01" class="slds-input" placeholder="Placeholder Text" />
+		  		</div>
+			</div>
+			<div class="slds-form-element">
+		  		<label class="slds-form-element__label" for="text-input-02"><abbr class="slds-required" title="required">*</abbr>Start Date</label>
+		  		<div class="slds-form-element__control">
+		    		<input type="text" id="text-input-01" class="slds-input" placeholder="MM/DD/YYYY" />
+		  		</div>
+			</div>
+			<div class="slds-form-element">
+		  		<label class="slds-form-element__label" for="text-input-03"><abbr class="slds-required" title="required">*</abbr>End Date</label>
+		  		<div class="slds-form-element__control">
+		    		<input type="text" id="text-input-01" class="slds-input" placeholder="MM/DD/YYYY" />
+		  		</div>
+			</div>
+			<div class="slds-form-element">
+			  <label class="slds-form-element__label" for="select-01"><abbr class="slds-required" title="required">*</abbr>Event Status</label>
+			  <div class="slds-form-element__control">
+			    <div class="slds-select_container">
+			      <select id="select-01" class="slds-select">
+			        <option>Planning</option>
+			        <option>Published</option>
+			        <option>In-Progress</option>
+			      </select>
+			    </div>
+			  </div>
+			</div>
+			<div class="slds-form-element">
+	   			<button type="button" class="slds-button slds-button--brand">Save</button>
+	  		</div>
+		</div>
+	</div>
+  </div>
+  <div id="tab-scoped-2" class="slds-tabs--scoped__content slds-hide " role="tabpanel" aria-labelledby="tab-scoped-2__item">
+	<!--
+    Start Grid
+ 	 -->
+ 	 <div class="slds-p-horizontal--large slds-col slds-size--1-of-1">
+	  	<h2 class="slds-text-heading--medium slds-m-top--large">Registration Types</h2>
+	    <p class="slds-text-body--regular slds-m-vertical--large slds-border--bottom">Add or modify registration types related to this event using the interactive module below.</p>
+	    <form class="slds-form--inline">
+		  <div class="slds-form-element">
+		    <label class="slds-form-element__label" for="name"></label>
+		    <div class="slds-form-element__control">
+		      <input type="text" id="name" class="slds-input" placeholder="Type Name" />
+		    </div>
+		  </div>
+		  <div class="slds-form-element">
+		    <label class="slds-form-element__label" for="email"></label>
+		    <div class="slds-form-element__control">
+		      <input type="text" id="email" class="slds-input" placeholder="Description"/>
+		    </div>
+		  </div>
+		  <div class="slds-form-element">
+		    <label class="slds-form-element__label" for="email"></label>
+		    <div class="slds-form-element__control">
+		      <input type="text" id="email" class="slds-input" placeholder="Capacity"/>
+		    </div>
+		  </div>
+		  <div class="slds-form-element">
+		    <button type="button" class="slds-button slds-button--brand">Add</button>
+		  </div>
+		</form>
+		<div style="padding-top:25px;">
+			<table class="slds-table slds-table--bordered slds-table--cell-buffer slds-table--fixed-layout">  
+		      <thead>
+		        <tr class="slds-text-heading--label">
+		          <!--
+		            The first cell (Account Name) requires space for long labels,
+		            so we're manually setting its width to half the size of the table
+		            using the spacing utility slds-size--1-of-2
+		          -->
+		          <th scope="col" >
+		            <div class="slds-truncate" title="Account Name">Edit | Delete</div>
+		          </th>
+		          <th scope="col">
+		            <div class="slds-truncate" title="Account Name">Registration Type Name</div>
+		          </th>
+		          <th scope="col">
+		            <div class="slds-truncate" title="Billing State/Province">Description</div>
+		          </th>
+		          <th scope="col">
+		            <div class="slds-truncate" title="Phone">Capacity</div>
+		          </th>
+		        </tr>
+		      </thead>
+		      <tbody>
+		      	<tr>
+		          <td data-label="Type">
+		            <div class="slds-truncate" >
+		            	<span class="slds-icon_container" title="description of icon when needed">
+						  <svg class="slds-icon--x-small slds-icon-text-default" aria-hidden="true">
+						    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#edit_form"></use>
+						  </svg>
+						  <span class="slds-assistive-text">Warning Icon</span>
+						</span> |
+						<span class="slds-icon_container" title="description of icon when needed">
+						  <svg class="slds-icon--x-small slds-icon-text-default" aria-hidden="true">
+						    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#delete"></use>
+						  </svg>
+						  <span class="slds-assistive-text">Warning Icon</span>
+						</span>
+		            </div>
+		          </td>
+		          <td data-label="Billing State/Province">
+		            <div class="slds-truncate"><a>Basic</a></div>
+		          </td>
+		          <td data-label="Phone">
+		            <div class="slds-truncate">Access to core sessions and meet and greet breakfast</div>
+		          </td>
+		          <td data-label="Type">
+		            <div class="slds-truncate" >50,000</div>
+		          </td>
+		        </tr>
+		        <tr>
+		          <td data-label="Type">
+		            <div class="slds-truncate" >
+		            	<span class="slds-icon_container" title="description of icon when needed">
+						  <svg class="slds-icon--x-small slds-icon-text-default" aria-hidden="true">
+						    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#edit_form"></use>
+						  </svg>
+						  <span class="slds-assistive-text">Warning Icon</span>
+						</span> |
+						<span class="slds-icon_container" title="description of icon when needed">
+						  <svg class="slds-icon--x-small slds-icon-text-default" aria-hidden="true">
+						    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#delete"></use>
+						  </svg>
+						  <span class="slds-assistive-text">Warning Icon</span>
+						</span>
+		            </div>
+		          </td>
+		          <td data-label="Billing State/Province">
+		            <div class="slds-truncate"><a>Intermediate</a></div>
+		          </td>
+		          <td data-label="Phone">
+		            <div class="slds-truncate">Access to core sessions, meet and greet breakfast, and Lunch and Learn.</div>
+		          </td>
+		          <td data-label="Type">
+		            <div class="slds-truncate" >25,000</div>
+		          </td>
+		        </tr>
+		        <tr>
+		          <td data-label="Type">
+		            <div class="slds-truncate" >
+		            	<span class="slds-icon_container" title="description of icon when needed">
+						  <svg class="slds-icon--x-small slds-icon-text-default" aria-hidden="true">
+						    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#edit_form"></use>
+						  </svg>
+						  <span class="slds-assistive-text">Warning Icon</span>
+						</span> |
+						<span class="slds-icon_container" title="description of icon when needed">
+						  <svg class="slds-icon--x-small slds-icon-text-default" aria-hidden="true">
+						    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#delete"></use>
+						  </svg>
+						  <span class="slds-assistive-text">Warning Icon</span>
+						</span>
+		            </div>
+		          </td>
+		          <td data-label="Billing State/Province">
+		            <div class="slds-truncate"><a>Platinum</a></div>
+		          </td>
+		          <td data-label="Phone">
+		            <div class="slds-truncate">All Basic and Intermedia benefits plus an all inclusive dinner with the Secretary of Education</div>
+		          </td>
+		          <td data-label="Type">
+		            <div class="slds-truncate" >5,000</div>
+		          </td>
+		        </tr>
+		      </tbody>
+		    </table>
+		</div>
+	</div>
+  </div>
+  <div id="tab-scoped-3" class="slds-tabs--scoped__content slds-hide" role="tabpanel" aria-labelledby="tab-scoped-3__item">Item Three Content</div>
+  <div id="tab-scoped-3" class="slds-tabs--scoped__content slds-hide" role="tabpanel" aria-labelledby="tab-scoped-4__item">Item Four Content</div>
+  <div id="tab-scoped-3" class="slds-tabs--scoped__content slds-hide" role="tabpanel" aria-labelledby="tab-scoped-5__item">Item Five Content</div>
+</div>
 
 {% endblock %}
