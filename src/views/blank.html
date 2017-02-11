@@ -93,9 +93,6 @@
 	</div>
   </div>
   <div id="tab-scoped-2" class="slds-tabs--scoped__content slds-hide " role="tabpanel" aria-labelledby="tab-scoped-2__item">
-	<!--
-    Start Grid
- 	 -->
  	 <div class="slds-p-horizontal--large slds-col slds-size--1-of-1">
 	  	<h2 class="slds-text-heading--medium slds-m-top--large">Registration Types</h2>
 	    <p class="slds-text-body--regular slds-m-vertical--large slds-border--bottom">Add or modify registration types related to this event using the interactive module below.</p>
@@ -232,9 +229,523 @@
 		</div>
 	</div>
   </div>
-  <div id="tab-scoped-3" class="slds-tabs--scoped__content slds-hide" role="tabpanel" aria-labelledby="tab-scoped-3__item">Item Three Content</div>
-  <div id="tab-scoped-3" class="slds-tabs--scoped__content slds-hide" role="tabpanel" aria-labelledby="tab-scoped-4__item">Item Four Content</div>
-  <div id="tab-scoped-3" class="slds-tabs--scoped__content slds-hide" role="tabpanel" aria-labelledby="tab-scoped-5__item">Item Five Content</div>
+  <div id="tab-scoped-3" class="slds-tabs--scoped__content slds-hide" role="tabpanel" aria-labelledby="tab-scoped-3__item">
+  	<!-- Starting Sub Tabs -->
+  	<div class="slds-tabs--default">
+	  <ul class="slds-tabs--default__nav" role="tablist">
+	    <li class="slds-tabs--default__item slds-grid slds-grid--vertical-align-center slds-active" role="presentation">
+	      <a href="javascript:void(0);" class="slds-tabs--default__link slds-p-horizontal--xx-small" role="tab" title="Tab Item 1" aria-selected="true" tabindex="0" id="subtab-tabitem-01" aria-controls="subtab-tabpanel-01">
+	        <div class="slds-icon_container" title="Case">
+	          <svg class="slds-icon slds-icon--small slds-icon-text-default" aria-hidden="true">
+	            <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#home"></use>
+	          </svg>
+	          <span class="slds-assistive-text">Case</span>
+	        </div>
+	        <span class="slds-truncate" title="Tab Item 1">Sessions</span>
+	      </a>
+	    </li>
+	    <li class="slds-tabs--default__item slds-grid slds-grid--vertical-align-center" role="presentation">
+	      <a href="javascript:void(0);" class="slds-tabs--default__link slds-p-horizontal--xx-small" role="tab" title="Tab Item 2" aria-selected="false" tabindex="-1" id="subtab-tabitem-02" aria-controls="subtab-tabpanel-02">
+	        <div class="slds-icon_container" title="Case">
+	          <svg class="slds-icon slds-icon--small slds-icon-text-default" aria-hidden="true">
+	            <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#home"></use>
+	          </svg>
+	          <span class="slds-assistive-text">Case</span>
+	        </div>
+	        <span class="slds-truncate" title="Tab Item 2">Topics</span>
+	      </a>
+	    </li>
+	    <li class="slds-tabs--default__item slds-grid slds-grid--vertical-align-center slds-active" role="presentation">
+	      <a href="javascript:void(0);" class="slds-tabs--default__link slds-p-horizontal--xx-small" role="tab" title="Tab Item 3" aria-selected="true" tabindex="0" id="subtab-tabitem-03" aria-controls="subtab-tabpanel-03">
+	        <div class="slds-icon_container" title="Case">
+	          <svg class="slds-icon slds-icon--small slds-icon-text-default" aria-hidden="true">
+	            <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#home"></use>
+	          </svg>
+	          <span class="slds-assistive-text">Case</span>
+	        </div>
+	        <span class="slds-truncate" title="Tab Item 1">Learning Tracks</span>
+	      </a>
+	    </li>
+	  </ul>
+	  <div class="slds-tabs--default__content slds-show" id="subtab-tabpanel-01" role="tabpanel" aria-labelledby="subtab-item-01">
+	  	<!-- Begin of the "Sessions" Component of the Tab -->
+	  	<div class="slds-p-horizontal--large slds-col slds-size--1-of-1">
+		  	<h2 class="slds-text-heading--medium slds-m-top--large">Sessions</h2>
+		    <p class="slds-text-body--regular slds-m-vertical--large slds-border--bottom">Add or modify Sessions related to this event using the interactive module below.</p>
+		    <form class="slds-form--inline">
+			  <div class="slds-form-element">
+			    <label class="slds-form-element__label" for="name"></label>
+			    <div class="slds-form-element__control">
+			      <input type="text" id="name" class="slds-input" placeholder="Session Name" />
+			    </div>
+			  </div>
+			  <div class="slds-form-element">
+			    <label class="slds-form-element__label" for="email"></label>
+			    <div class="slds-form-element__control">
+			      <input type="text" id="email" class="slds-input" placeholder="Description"/>
+			    </div>
+			  </div>
+			  <div class="slds-form-element">
+			    <label class="slds-form-element__label" for="email"></label>
+			    <div class="slds-form-element__control">
+			      <input type="text" id="email" class="slds-input" placeholder="Capacity"/>
+			    </div>
+			  </div>
+			  <div class="slds-form-element">
+			    <label class="slds-form-element__label" for="email"></label>
+			    <div class="slds-form-element__control">
+			      <input type="text" id="email" class="slds-input" placeholder="Search Venues"/>
+			    </div>
+			  </div>
+			  <div class="slds-form-element">
+				  <label class="slds-form-element__label" for="select-01"></label>
+				  <div class="slds-form-element__control">
+				    <div class="slds-select_container">
+				      <select id="select-01" class="slds-select">
+				        <option value="" disabled selected>Select Registration Type</option>
+				        <option>Basic</option>
+				        <option>Intermediate</option>
+				        <option>Platinum</option>
+				      </select>
+				    </div>
+				  </div>
+				</div>
+			  <div class="slds-form-element">
+			    <button type="button" class="slds-button slds-button--brand">Add</button>
+			  </div>
+			</form>
+			<div style="padding-top:25px;">
+				<table class="slds-table slds-table--bordered .slds-table--compact">  
+			      <thead>
+			        <tr class="slds-text-heading--label">
+			          <!--
+			            The first cell (Account Name) requires space for long labels,
+			            so we're manually setting its width to half the size of the table
+			            using the spacing utility slds-size--1-of-2
+			          -->
+			          <th scope="col" >
+			            <div class="slds-truncate" title="Account Name">Edit | Delete</div>
+			          </th>
+			          <th scope="col">
+			            <div class="slds-truncate" title="Account Name">Session Name</div>
+			          </th>
+			          <th scope="col">
+			            <div class="slds-truncate" title="Billing State/Province">Description</div>
+			          </th>
+			          <th scope="col">
+			            <div class="slds-truncate" title="Phone">Capacity</div>
+			          </th>
+			          <th scope="col">
+			            <div class="slds-truncate" title="Phone">Venue</div>
+			          </th>
+			          <th scope="col">
+			            <div class="slds-truncate" title="Phone">Entitled Reg. Types</div>
+			          </th>
+			        </tr>
+			      </thead>
+			      <tbody>
+			      	<tr>
+			          <td data-label="Type" class=".slds-cell-wrap">
+			            <div class="slds-truncate" >
+			            	<span class="slds-icon_container" title="description of icon when needed">
+							  <svg class="slds-icon--x-small slds-icon-text-default" aria-hidden="true">
+							    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#edit_form"></use>
+							  </svg>
+							  <span class="slds-assistive-text">Warning Icon</span>
+							</span> |
+							<span class="slds-icon_container" title="description of icon when needed">
+							  <svg class="slds-icon--x-small slds-icon-text-default" aria-hidden="true">
+							    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#delete"></use>
+							  </svg>
+							  <span class="slds-assistive-text">Warning Icon</span>
+							</span>
+			            </div>
+			          </td>
+			          <td data-label="Billing State/Province" class=".slds-cell-wrap">
+			            <div class="slds-truncate"><a>An Introduction to the Customer Lifecycle</a></div>
+			          </td>
+			          <td data-label="Phone" class=".slds-cell-wrap">
+			            <div class="slds-truncate">This class will provide participants with an overview of the Customer Lifecycle</div>
+			          </td>
+			          <td data-label="Type" class=".slds-cell-wrap">
+			            <div class="slds-truncate" >50</div>
+			          </td>
+			          <td data-label="Type" class=".slds-cell-wrap">
+			            <div class="slds-truncate" >The Westin Grand Hotel - Ball Room A</div>
+			          </td>
+			          <td data-label="Type" class=".slds-cell-wrap">
+			            <div class="slds-truncate" >
+			            	<span class="slds-badge">Basic</span>
+			            </div>
+			          </td>
+			        </tr>
+			        <tr>
+			          <td data-label="Type" class=".slds-cell-wrap">
+			            <div class="slds-truncate" >
+			            	<span class="slds-icon_container" title="description of icon when needed">
+							  <svg class="slds-icon--x-small slds-icon-text-default" aria-hidden="true">
+							    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#edit_form"></use>
+							  </svg>
+							  <span class="slds-assistive-text">Warning Icon</span>
+							</span> |
+							<span class="slds-icon_container" title="description of icon when needed">
+							  <svg class="slds-icon--x-small slds-icon-text-default" aria-hidden="true">
+							    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#delete"></use>
+							  </svg>
+							  <span class="slds-assistive-text">Warning Icon</span>
+							</span>
+			            </div>
+			          </td>
+			          <td data-label="Billing State/Province" class=".slds-cell-wrap">
+			            <div class="slds-truncate"><a>Intermediate</a></div>
+			          </td>
+			          <td data-label="Phone" class=".slds-cell-wrap">
+			            <div class="slds-truncate">Access to core sessions, meet and greet breakfast, and Lunch and Learn.</div>
+			          </td>
+			          <td data-label="Type" class=".slds-cell-wrap">
+			            <div class="slds-truncate" >25,000</div>
+			          </td>
+			          <td data-label="Type" class=".slds-cell-wrap">
+			            <div class="slds-truncate" >5,000</div>
+			          </td>
+			          <td data-label="Type" class=".slds-cell-wrap">
+			            <div class="slds-truncate" >
+			            	<span class="slds-badge">Basic</span>
+			            </div>
+			          </td>
+			        </tr>
+			        <tr>
+			          <td data-label="Type" class=".slds-cell-wrap">
+			            <div class="slds-truncate" >
+			            	<span class="slds-icon_container" title="description of icon when needed">
+							  <svg class="slds-icon--x-small slds-icon-text-default" aria-hidden="true">
+							    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#edit_form"></use>
+							  </svg>
+							  <span class="slds-assistive-text">Warning Icon</span>
+							</span> |
+							<span class="slds-icon_container" title="description of icon when needed">
+							  <svg class="slds-icon--x-small slds-icon-text-default" aria-hidden="true">
+							    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#delete"></use>
+							  </svg>
+							  <span class="slds-assistive-text">Warning Icon</span>
+							</span>
+			            </div>
+			          </td>
+			          <td data-label="Billing State/Province" class=".slds-cell-wrap">
+			            <div class="slds-truncate"><a>Platinum</a></div>
+			          </td>
+			          <td data-label="Phone" class=".slds-cell-wrap">
+			            <div class="slds-truncate">All Basic and Intermedia benefits plus an all inclusive dinner with the <br>Secretary of Education</div>
+			          </td>
+			          <td data-label="Type" class=".slds-cell-wrap">
+			            <div class="slds-truncate" >5,000</div>
+			          </td>
+			          <td data-label="Type" class=".slds-cell-wrap">
+			            <div class="slds-truncate" >5,000</div>
+			          </td>
+			          <td data-label="Type" class=".slds-cell-wrap">
+			            <div class="slds-truncate" >
+			            	<span class="slds-badge">Basic</span>
+			            </div>
+			          </td>
+			        </tr>
+			      </tbody>
+			    </table>
+			</div>
+		</div>
+	  </div>
+	  <div class="slds-tabs--default__content slds-hide" id="subtab-tabpanel-02" role="tabpanel" aria-labelledby="subtab-item-02">
+	  	<!-- Being of the "Topics" portion of the Tab -->
+		<div class="slds-p-horizontal--large slds-col slds-size--1-of-1">
+		  	<h2 class="slds-text-heading--medium slds-m-top--large">Topics</h2>
+		    <p class="slds-text-body--regular slds-m-vertical--large slds-border--bottom">Add or modify Topics related to this event using the interactive module below.</p>
+		    <form class="slds-form--inline">
+			  <div class="slds-form-element">
+			    <label class="slds-form-element__label" for="name"></label>
+			    <div class="slds-form-element__control">
+			      <input type="text" id="name" class="slds-input" placeholder="Topic" />
+			    </div>
+			  </div>
+			  <div class="slds-form-element">
+			    <label class="slds-form-element__label" for="email"></label>
+			    <div class="slds-form-element__control">
+			      <input type="text" id="email" class="slds-input" placeholder="Description"/>
+			    </div>
+			  </div>
+			  <div class="slds-form-element">
+			    <label class="slds-form-element__label" for="email"></label>
+			    <div class="slds-form-element__control">
+			      <input type="text" id="email" class="slds-input" placeholder="Search Sessions"/>
+			    </div>
+			  </div>
+			  <div class="slds-form-element">
+			    <button type="button" class="slds-button slds-button--brand">Add</button>
+			  </div>
+			</form>
+			<div style="padding-top:25px;">
+				<table class="slds-table slds-table--bordered .slds-table--compact">  
+			      <thead>
+			        <tr class="slds-text-heading--label">
+			          <!--
+			            The first cell (Account Name) requires space for long labels,
+			            so we're manually setting its width to half the size of the table
+			            using the spacing utility slds-size--1-of-2
+			          -->
+			          <th scope="col" >
+			            <div class="slds-truncate" title="Account Name">Edit | Delete</div>
+			          </th>
+			          <th scope="col">
+			            <div class="slds-truncate" title="Account Name">Topic</div>
+			          </th>
+			          <th scope="col">
+			            <div class="slds-truncate" title="Billing State/Province">Description</div>
+			          </th>
+			          <th scope="col">
+			            <div class="slds-truncate" title="Phone">Session(s)</div>
+			          </th>
+			        </tr>
+			      </thead>
+			      <tbody>
+			      	<tr>
+			          <td data-label="Type" class=".slds-cell-wrap">
+			            <div class="slds-truncate" >
+			            	<span class="slds-icon_container" title="description of icon when needed">
+							  <svg class="slds-icon--x-small slds-icon-text-default" aria-hidden="true">
+							    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#edit_form"></use>
+							  </svg>
+							  <span class="slds-assistive-text">Warning Icon</span>
+							</span> |
+							<span class="slds-icon_container" title="description of icon when needed">
+							  <svg class="slds-icon--x-small slds-icon-text-default" aria-hidden="true">
+							    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#delete"></use>
+							  </svg>
+							  <span class="slds-assistive-text">Warning Icon</span>
+							</span>
+			            </div>
+			          </td>
+			          <td data-label="Billing State/Province" class=".slds-cell-wrap">
+			            <div class="slds-truncate"><a>Building Something Greater</a></div>
+			          </td>
+			          <td data-label="Phone" class=".slds-cell-wrap">
+			            <div class="slds-truncate">This topic should be used to describe classes related to building a better business</div>
+			          </td>
+			          <td data-label="Type" class=".slds-cell-wrap">
+			            <div class="slds-truncate" >
+			            	<span class="slds-badge">An Introduction to the Customer Lifecycle</span>
+			            </div>
+			          </td>
+			        </tr>
+			        <tr>
+			          <td data-label="Type" class=".slds-cell-wrap">
+			            <div class="slds-truncate" >
+			            	<span class="slds-icon_container" title="description of icon when needed">
+							  <svg class="slds-icon--x-small slds-icon-text-default" aria-hidden="true">
+							    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#edit_form"></use>
+							  </svg>
+							  <span class="slds-assistive-text">Warning Icon</span>
+							</span> |
+							<span class="slds-icon_container" title="description of icon when needed">
+							  <svg class="slds-icon--x-small slds-icon-text-default" aria-hidden="true">
+							    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#delete"></use>
+							  </svg>
+							  <span class="slds-assistive-text">Warning Icon</span>
+							</span>
+			            </div>
+			          </td>
+			          <td data-label="Billing State/Province" class=".slds-cell-wrap">
+			            <div class="slds-truncate"><a>Service Cloud</a></div>
+			          </td>
+			          <td data-label="Phone" class=".slds-cell-wrap">
+			            <div class="slds-truncate">This topic should be used to describe classes related to the Service Cloud</div>
+			          </td>
+			          <td data-label="Type" class=".slds-cell-wrap">
+			            <div class="slds-truncate" >
+			            	<span class="slds-badge">An Introduction to the Customer Lifecycle</span>
+			            </div>
+			          </td>
+			        </tr>
+			        <tr>
+			          <td data-label="Type" class=".slds-cell-wrap">
+			            <div class="slds-truncate" >
+			            	<span class="slds-icon_container" title="description of icon when needed">
+							  <svg class="slds-icon--x-small slds-icon-text-default" aria-hidden="true">
+							    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#edit_form"></use>
+							  </svg>
+							  <span class="slds-assistive-text">Warning Icon</span>
+							</span> |
+							<span class="slds-icon_container" title="description of icon when needed">
+							  <svg class="slds-icon--x-small slds-icon-text-default" aria-hidden="true">
+							    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#delete"></use>
+							  </svg>
+							  <span class="slds-assistive-text">Warning Icon</span>
+							</span>
+			            </div>
+			          </td>
+			          <td data-label="Billing State/Province" class=".slds-cell-wrap">
+			            <div class="slds-truncate"><a>Sales Cloud</a></div>
+			          </td>
+			          <td data-label="Phone" class=".slds-cell-wrap">
+			            <div class="slds-truncate">This topic should be used to describe classes related to the Sales Cloud</div>
+			          </td>
+			          <td data-label="Type" class=".slds-cell-wrap">
+			            <div class="slds-truncate" >
+			            	<span class="slds-badge">An Introduction to the Customer Lifecycle</span>
+			            </div>
+			          </td>
+			        </tr>
+			      </tbody>
+			    </table>
+			</div>
+		</div>
+	  </div>
+	  <div class="slds-tabs--default__content slds-hide" id="subtab-tabpanel-03" role="tabpanel" aria-labelledby="subtab-item-03">
+	  <!-- Being of the "Learning Tracks" portion of the Tab -->
+			<div class="slds-p-horizontal--large slds-col slds-size--1-of-1">
+			  	<h2 class="slds-text-heading--medium slds-m-top--large">Learning Tracks</h2>
+			    <p class="slds-text-body--regular slds-m-vertical--large slds-border--bottom">Add or modify Learning Tracks related to this event using the interactive module below.</p>
+			    <form class="slds-form--inline">
+				  <div class="slds-form-element">
+				    <label class="slds-form-element__label" for="name"></label>
+				    <div class="slds-form-element__control">
+				      <input type="text" id="name" class="slds-input" placeholder="Name" />
+				    </div>
+				  </div>
+				  <div class="slds-form-element">
+				    <label class="slds-form-element__label" for="email"></label>
+				    <div class="slds-form-element__control">
+				      <input type="text" id="email" class="slds-input" placeholder="Description"/>
+				    </div>
+				  </div>
+				  <div class="slds-form-element">
+				    <label class="slds-form-element__label" for="email"></label>
+				    <div class="slds-form-element__control">
+				      <input type="text" id="email" class="slds-input" placeholder="Search Sessions"/>
+				    </div>
+				  </div>
+				  <div class="slds-form-element">
+				    <button type="button" class="slds-button slds-button--brand">Add</button>
+				  </div>
+				</form>
+				<div style="padding-top:25px;">
+					<table class="slds-table slds-table--bordered .slds-table--compact">  
+				      <thead>
+				        <tr class="slds-text-heading--label">
+				          <!--
+				            The first cell (Account Name) requires space for long labels,
+				            so we're manually setting its width to half the size of the table
+				            using the spacing utility slds-size--1-of-2
+				          -->
+				          <th scope="col" >
+				            <div class="slds-truncate" title="Account Name">Edit | Delete</div>
+				          </th>
+				          <th scope="col">
+				            <div class="slds-truncate" title="Account Name">Learning Track</div>
+				          </th>
+				          <th scope="col">
+				            <div class="slds-truncate" title="Billing State/Province">Description</div>
+				          </th>
+				          <th scope="col">
+				            <div class="slds-truncate" title="Phone">Session(s)</div>
+				          </th>
+				        </tr>
+				      </thead>
+				      <tbody>
+				      	<tr>
+				          <td data-label="Type" class=".slds-cell-wrap">
+				            <div class="slds-truncate" >
+				            	<span class="slds-icon_container" title="description of icon when needed">
+								  <svg class="slds-icon--x-small slds-icon-text-default" aria-hidden="true">
+								    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#edit_form"></use>
+								  </svg>
+								  <span class="slds-assistive-text">Warning Icon</span>
+								</span> |
+								<span class="slds-icon_container" title="description of icon when needed">
+								  <svg class="slds-icon--x-small slds-icon-text-default" aria-hidden="true">
+								    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#delete"></use>
+								  </svg>
+								  <span class="slds-assistive-text">Warning Icon</span>
+								</span>
+				            </div>
+				          </td>
+				          <td data-label="Billing State/Province" class=".slds-cell-wrap">
+				            <div class="slds-truncate"><a>Building Something Greater</a></div>
+				          </td>
+				          <td data-label="Phone" class=".slds-cell-wrap">
+				            <div class="slds-truncate">This learning track should be used to describe classes related to building a better business</div>
+				          </td>
+				          <td data-label="Type" class=".slds-cell-wrap">
+				            <div class="slds-truncate" >
+				            	<span class="slds-badge">An Introduction to the Customer Lifecycle</span>
+				            </div>
+				          </td>
+				        </tr>
+				        <tr>
+				          <td data-label="Type" class=".slds-cell-wrap">
+				            <div class="slds-truncate" >
+				            	<span class="slds-icon_container" title="description of icon when needed">
+								  <svg class="slds-icon--x-small slds-icon-text-default" aria-hidden="true">
+								    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#edit_form"></use>
+								  </svg>
+								  <span class="slds-assistive-text">Warning Icon</span>
+								</span> |
+								<span class="slds-icon_container" title="description of icon when needed">
+								  <svg class="slds-icon--x-small slds-icon-text-default" aria-hidden="true">
+								    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#delete"></use>
+								  </svg>
+								  <span class="slds-assistive-text">Warning Icon</span>
+								</span>
+				            </div>
+				          </td>
+				          <td data-label="Billing State/Province" class=".slds-cell-wrap">
+				            <div class="slds-truncate"><a>Service Cloud</a></div>
+				          </td>
+				          <td data-label="Phone" class=".slds-cell-wrap">
+				            <div class="slds-truncate">This learning track should be used to describe classes related to the Service Cloud</div>
+				          </td>
+				          <td data-label="Type" class=".slds-cell-wrap">
+				            <div class="slds-truncate" >
+				            	<span class="slds-badge">An Introduction to the Customer Lifecycle</span>
+				            </div>
+				          </td>
+				        </tr>
+				        <tr>
+				          <td data-label="Type" class=".slds-cell-wrap">
+				            <div class="slds-truncate" >
+				            	<span class="slds-icon_container" title="description of icon when needed">
+								  <svg class="slds-icon--x-small slds-icon-text-default" aria-hidden="true">
+								    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#edit_form"></use>
+								  </svg>
+								  <span class="slds-assistive-text">Warning Icon</span>
+								</span> |
+								<span class="slds-icon_container" title="description of icon when needed">
+								  <svg class="slds-icon--x-small slds-icon-text-default" aria-hidden="true">
+								    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#delete"></use>
+								  </svg>
+								  <span class="slds-assistive-text">Warning Icon</span>
+								</span>
+				            </div>
+				          </td>
+				          <td data-label="Billing State/Province" class=".slds-cell-wrap">
+				            <div class="slds-truncate"><a>Sales Cloud</a></div>
+				          </td>
+				          <td data-label="Phone" class=".slds-cell-wrap">
+				            <div class="slds-truncate">This learning track should be used to describe classes related to the Sales Cloud</div>
+				          </td>
+				          <td data-label="Type" class=".slds-cell-wrap">
+				            <div class="slds-truncate" >
+				            	<span class="slds-badge">An Introduction to the Customer Lifecycle</span>
+				            </div>
+				          </td>
+				        </tr>
+				      </tbody>
+				    </table>
+				</div>
+			</div>
+		  </div>
+	  </div>
+	</div>
+  <div id="tab-scoped-5" class="slds-tabs--scoped__content slds-hide" role="tabpanel" aria-labelledby="tab-scoped-5__item">Item Four Content</div>
+  <div id="tab-scoped-6" class="slds-tabs--scoped__content slds-hide" role="tabpanel" aria-labelledby="tab-scoped-6__item">Item Five Content</div>
 </div>
 
 {% endblock %}
