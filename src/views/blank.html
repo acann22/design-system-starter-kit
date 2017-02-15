@@ -15,8 +15,18 @@
   Page content (gets injected into the template)
 -->
 {% block content %}
+
+<!--
+	Begin Primary Tabs
+-->
 <div class="slds-tabs--scoped">
-  <ul class="slds-tabs--scoped__nav" role="tablist">
+<!-- 	
+	Begin list of  Primary Tabs
+-->
+  <ul class="slds-tabs--scoped__nav" role="tablist">    
+<!-- 
+	Tab 1
+ -->
     <li class="slds-tabs--scoped__item slds-active" title="Item One" role="presentation"><a class="slds-tabs--scoped__link" href="javascript:void(0);" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-scoped-1" id="tab-scoped-1__item">Info
 		<span class="slds-icon_container" title="description of icon when needed">
 		  <svg class="slds-icon--x-small slds-icon-text-default" aria-hidden="true">
@@ -24,6 +34,9 @@
 		  </svg>
 		  <span class="slds-assistive-text">Warning Icon</span>
 		</span></a></li>
+<!-- 
+	Tab 2
+ -->    
     <li class="slds-tabs--scoped__item" title="Item Two" role="presentation"><a class="slds-tabs--scoped__link" href="javascript:void(0);" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-scoped-2" id="tab-scoped-2__item">Registration Types
 		<span class="slds-icon_container" title="description of icon when needed">
 		  <svg class="slds-icon--x-small slds-icon-text-default" aria-hidden="true">
@@ -31,6 +44,9 @@
 		  </svg>
 		  <span class="slds-assistive-text">Warning Icon</span>
 		</span></a></li>
+<!-- 
+	Tab 3
+ -->    
     <li class="slds-tabs--scoped__item" title="Item Three" role="presentation"><a class="slds-tabs--scoped__link" href="javascript:void(0);" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-scoped-3" id="tab-scoped-3__item">Sessions
     	<span class="slds-icon_container" title="description of icon when needed">
 		  <svg class="slds-icon--x-small slds-icon-text-default" aria-hidden="true">
@@ -38,14 +54,20 @@
 		  </svg>
 		  <span class="slds-assistive-text">Warning Icon</span>
 		</span></a></li>
-    <li class="slds-tabs--scoped__item" title="Item Three" role="presentation"><a class="slds-tabs--scoped__link" href="javascript:void(0);" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-scoped-3" id="tab-scoped-4__item">Speakers
+<!-- 
+	Tab 4
+ -->    
+    <li class="slds-tabs--scoped__item" title="Item Four" role="presentation"><a class="slds-tabs--scoped__link" href="javascript:void(0);" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-scoped-4" id="tab-scoped-4__item">Speakers
     	<span class="slds-icon_container" title="description of icon when needed">
 		  <svg class="slds-icon--x-small slds-icon-text-default" aria-hidden="true">
 		    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#groups"></use>
 		  </svg>
 		  <span class="slds-assistive-text">Warning Icon</span>
 		</span></a></li>
-    <li class="slds-tabs--scoped__item" title="Item Three" role="presentation"><a class="slds-tabs--scoped__link" href="javascript:void(0);" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-scoped-3" id="tab-scoped-5__item">Venues
+<!-- 
+	Tab 5
+ -->    
+    <li class="slds-tabs--scoped__item" title="Item Five" role="presentation"><a class="slds-tabs--scoped__link" href="javascript:void(0);" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-scoped-5" id="tab-scoped-5__item">Venues
     	<span class="slds-icon_container" title="description of icon when needed">
 		  <svg class="slds-icon--x-small slds-icon-text-default" aria-hidden="true">
 		    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#company"></use>
@@ -53,6 +75,8 @@
 		  <span class="slds-assistive-text">Warning Icon</span>
 		</span></a></li>
   </ul>
+<!-- End list of Primary Tabs -->
+<!-- Being Tab 1 Content -->
   <div id="tab-scoped-1" class="slds-tabs--scoped__content slds-show" role="tabpanel" aria-labelledby="tab-scoped-1__item">
   	<div class="slds-grid slds-wrap slds-grid--pull-padded">
   		<div class="slds-form--stacked">
@@ -92,6 +116,7 @@
 		</div>
 	</div>
   </div>
+ <!-- Begin Tab 2 Content  -->
   <div id="tab-scoped-2" class="slds-tabs--scoped__content slds-hide " role="tabpanel" aria-labelledby="tab-scoped-2__item">
  	 <div class="slds-p-horizontal--large slds-col slds-size--1-of-1">
 	  	<h2 class="slds-text-heading--medium slds-m-top--large">Registration Types</h2>
@@ -229,6 +254,7 @@
 		</div>
 	</div>
   </div>
+  <!-- Begin Tab 3 Content -->
   <div id="tab-scoped-3" class="slds-tabs--scoped__content slds-hide" role="tabpanel" aria-labelledby="tab-scoped-3__item">
   	<!-- Starting Sub Tabs -->
   	<div class="slds-tabs--default">
@@ -255,19 +281,19 @@
 	        <span class="slds-truncate" title="Tab Item 2">Topics</span>
 	      </a>
 	    </li>
-	    <li class="slds-tabs--default__item slds-grid slds-grid--vertical-align-center slds-active" role="presentation">
-	      <a href="javascript:void(0);" class="slds-tabs--default__link slds-p-horizontal--xx-small" role="tab" title="Tab Item 3" aria-selected="true" tabindex="0" id="subtab-tabitem-03" aria-controls="subtab-tabpanel-03">
+	    <li class="slds-tabs--default__item slds-grid slds-grid--vertical-align-center" role="presentation">
+	      <a href="javascript:void(0);" class="slds-tabs--default__link slds-p-horizontal--xx-small" role="tab" title="Tab Item 3" aria-selected="false" tabindex="0" id="subtab-tabitem-03" aria-controls="subtab-tabpanel-03">
 	        <div class="slds-icon_container" title="Case">
 	          <svg class="slds-icon slds-icon--small slds-icon-text-default" aria-hidden="true">
 	            <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#home"></use>
 	          </svg>
 	          <span class="slds-assistive-text">Case</span>
 	        </div>
-	        <span class="slds-truncate" title="Tab Item 1">Learning Tracks</span>
+	        <span class="slds-truncate" title="Tab Item 3">Learning Tracks</span>
 	      </a>
 	    </li>
 	  </ul>
-	  <div class="slds-tabs--default__content slds-show" id="subtab-tabpanel-01" role="tabpanel" aria-labelledby="subtab-item-01">
+	  <div class="slds-tabs--default__content slds-show" id="subtab-tabpanel-01" role="tabpanel" aria-labelledby="subtab-tabitem-01">
 	  	<!-- Begin of the "Sessions" Component of the Tab -->
 	  	<div class="slds-p-horizontal--large slds-col slds-size--1-of-1">
 		  	<h2 class="slds-text-heading--medium slds-m-top--large">Sessions</h2>
@@ -454,7 +480,7 @@
 			</div>
 		</div>
 	  </div>
-	  <div class="slds-tabs--default__content slds-hide" id="subtab-tabpanel-02" role="tabpanel" aria-labelledby="subtab-item-02">
+	  <div class="slds-tabs--default__content slds-hide" id="subtab-tabpanel-02" role="tabpanel" aria-labelledby="subtab-tabitem-02">
 	  	<!-- Being of the "Topics" portion of the Tab -->
 		<div class="slds-p-horizontal--large slds-col slds-size--1-of-1">
 		  	<h2 class="slds-text-heading--medium slds-m-top--large">Topics</h2>
@@ -598,7 +624,7 @@
 			</div>
 		</div>
 	  </div>
-	  <div class="slds-tabs--default__content slds-hide" id="subtab-tabpanel-03" role="tabpanel" aria-labelledby="subtab-item-03">
+	  <div class="slds-tabs--default__content slds-hide" id="subtab-tabpanel-03" role="tabpanel" aria-labelledby="subtab-tabitem-03">
 	  <!-- Being of the "Learning Tracks" portion of the Tab -->
 			<div class="slds-p-horizontal--large slds-col slds-size--1-of-1">
 			  	<h2 class="slds-text-heading--medium slds-m-top--large">Learning Tracks</h2>
@@ -744,6 +770,7 @@
 		  </div>
 	  </div>
 	</div>
+<!-- End Tab 3 Content -->
   <div id="tab-scoped-5" class="slds-tabs--scoped__content slds-hide" role="tabpanel" aria-labelledby="tab-scoped-5__item">Item Four Content</div>
   <div id="tab-scoped-6" class="slds-tabs--scoped__content slds-hide" role="tabpanel" aria-labelledby="tab-scoped-6__item">Item Five Content</div>
 </div>
